@@ -1,0 +1,6 @@
+[submodule "platform"]
+	path = platform
+	url = https://github.com/blue995/de.hs_coburg.mgse.platform.git
+[submodule "docker"]
+	path = docker
+	url = https://github.com/blue995/de.hs_coburg.mgse.docker.git
