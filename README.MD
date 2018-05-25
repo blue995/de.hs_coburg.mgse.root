@@ -1,8 +1,18 @@
 # Introduction
 This is the root repository of the MGSE project in 2018.
 
-# Clone the project
+## Clone the project
 Short Version: `git clone --recursive https://github.com/blue995/de.hs_coburg.mgse.root.git`
+
+## Update submodules
+**Important**: If you want to change something in a submodule you have to check that the submodule branch is on `master`.
+* *in submodule*: Push outstanding changes in submodule (`commit` -> `pull` -> `push`) (! Check `master`, NOT detached HEAD !)
+* *in root*: Push outstanding changes in root (...)
+Now you've updated the pointer of the submodule to the most recent commit on `master`. Teammembers can update their local submodules with the commands described in the following section.
+
+## Pull changes in submodules
+* `git pull`
+* `git submodule update`
 
 # Structure of this repository
 ## Submodule: docker
