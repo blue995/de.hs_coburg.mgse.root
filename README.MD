@@ -2,7 +2,7 @@
 This is the root repository of the MGSE project in 2018.
 
 # Clone the project
-Short Version: `git clone --recursive https://github.com/<GITHUB_USER>/de.hs_coburg.mgse.root.git`
+Short Version: `git clone --recursive https://github.com/blue995/de.hs_coburg.mgse.root.git`
 
 # Structure of this repository
 ## Submodule: docker
