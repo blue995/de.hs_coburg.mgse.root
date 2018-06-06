@@ -4,3 +4,6 @@
 [submodule "docker"]
 	path = docker
 	url = https://github.com/blue995/de.hs_coburg.mgse.docker.git
+[submodule "application"]
+	path = application
+	url = https://github.com/blue995/de.hs_coburg.mgse.application.git
