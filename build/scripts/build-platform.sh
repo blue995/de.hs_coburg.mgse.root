@@ -9,10 +9,6 @@ echo "Changing working directory to '$PLATFORM_DIR'"
 cd "$PLATFORM_DIR"
 
 # Build with gradle
-echo
-echo "ATTENTION"
-echo "Sit down, relax or go drink some coffee... this might take a while!"
-sleep 6
 gradle build
 
 # Go Back
