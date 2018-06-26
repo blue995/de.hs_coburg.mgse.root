@@ -6,7 +6,7 @@ PATH=$PATH:$BASEDIR/scripts
 
 SERVER=apache-tomcat-8.0.52
 
-TOMCAT_LOCATION="$BASEDIR/../application/servers/$TOMCAT"
+TOMCAT_LOCATION="$BASEDIR/../application/servers/$SERVER"
 RESTAPI_LOCATION="$BASEDIR/../application/restapi"
 FRONTEND_LOCATION="$BASEDIR/../application/frontend"
 PLATFORM_LOCATION="$BASEDIR/../platform"
