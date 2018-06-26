@@ -1,8 +1,8 @@
 #!/bin/sh
 
 ### Updating project ###
-#git pull
-#git submodule update
+git pull
+git submodule update
 
 ### Setup Database ###
 # Recreate database and user
