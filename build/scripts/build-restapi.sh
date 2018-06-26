@@ -1,7 +1,6 @@
 #!/bin/sh
 
-CURRENT_DIR=$(realpath "$1")
-RESTAPI_DIR=$(realpath "$2")
+RESTAPI_DIR=$(realpath "$1")
 
 # Change working directory
 echo "Building REST-API."
@@ -10,7 +9,3 @@ cd "$RESTAPI_DIR"
 
 # Build with npm
 mvn install
-
-# Go Back
-echo "Changing working directory to '$CURRENT_LOCATION'"
-cd "$CURRENT_LOCATION"

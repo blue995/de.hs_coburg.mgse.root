@@ -1,7 +1,6 @@
 #!/bin/sh
 
-CURRENT_DIR=$(realpath "$1")
-FRONTEND_DIR=$(realpath "$2")
+FRONTEND_DIR=$(realpath "$1")
 
 # Change working directory
 echo "Building Frontend."
@@ -10,7 +9,3 @@ cd "$FRONTEND_DIR"
 
 # Build with npm
 npm install
-
-# Go Back
-echo "Changing working directory to '$CURRENT_LOCATION'"
-cd "$CURRENT_LOCATION"
