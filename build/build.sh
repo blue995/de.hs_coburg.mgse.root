@@ -3,8 +3,16 @@
 BASEDIR=$(dirname "$0")
 BASEDIR=$(realpath "$BASEDIR")
 PATH=$PATH:$BASEDIR/scripts
+
 SERVER=apache-tomcat-8.0.52
 
+TOMCAT_LOCATION="$BASEDIR/../application/servers/$TOMCAT"
+RESTAPI_LOCATION="$BASEDIR/../application/restapi"
+FRONTEND_LOCATION="$BASEDIR/../application/frontend"
+PLATFORM_LOCATION="$BASEDIR/../platform"
+
+RESTAPI_ARTIFACT="rest-api.war"
+RESTAPI_ARTIFACT_LOCATION="target"
 
 ### Clean project ###
 clean-project.sh
@@ -26,14 +34,16 @@ echo "Countdown:"
 countdown.sh 10
 
 ### Build DSL ###
-build-platform.sh $BASEDIR/../platform
+build-platform.sh $PLATFORM_LOCATION
 
 ### Build Frontend ###
-build-frontend.sh $BASEDIR/../application/frontend
+build-frontend.sh $FRONTEND_LOCATION
 
 ### Build Restapi ###
-build-restapi.sh $BASEDIR/../application/restapi
+build-restapi.sh $RESTAPI_LOCATION
 
 ### Deploy Restapi ###
-deploy-war.sh $BASEDIR/../application/restapi/target rest-api.war $BASEDIR/../application/servers/$TOMCAT
+deploy-war.sh $RESTAPI_LOCATION/$RESTAPI_ARTIFACT_LOCATION $RESTAPI_ARTIFACT $TOMCAT_LOCATION
 
+### Deploy Angular ###
+deploy-angular.sh $FRONTEND_LOCATION/dist/hsis-ui $TOMCAT_LOCATION
