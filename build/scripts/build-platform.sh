@@ -1,7 +1,7 @@
 #!/bin/sh
 
-CURRENT_DIR="$1"
-PLATFORM_DIR="$2"
+CURRENT_DIR=$(realpath "$1")
+PLATFORM_DIR=$(realpath "$2")
 
 # Change working directory
 echo "Building Platform DSL."
@@ -16,4 +16,5 @@ sleep 6
 gradle build
 
 # Go Back
+echo "Changing working directory to '$CURRENT_LOCATION'"
 cd "$CURRENT_LOCATION"

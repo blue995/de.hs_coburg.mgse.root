@@ -1,4 +1,4 @@
-DROP USER 'mgse_user'@'localhost';
+DROP USER IF EXISTS 'mgse_user'@'localhost';
 DROP DATABASE IF EXISTS mgse_user_db;
 CREATE DATABASE mgse_user_db;
 CREATE USER 'mgse_user'@'localhost' IDENTIFIED BY 'ageofempires3';

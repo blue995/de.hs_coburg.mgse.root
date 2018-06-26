@@ -15,3 +15,6 @@ setup-database.sh $BASEDIR/setup.sql
 
 ### Build DSL ###
 build-platform.sh $BASEDIR $BASEDIR/../platform
+
+### Build Frontend ###
+build-frontend.sh $BASEDIR $BASEDIR/../application/frontend

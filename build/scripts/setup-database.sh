@@ -4,5 +4,5 @@ SCRIPT="$1"
 
 echo "Using script $SCRIPT"
 echo "Recreating database and user..."
-mysql -uroot -proot < $SCRIPT
+mysql -uroot -ppassword < $SCRIPT
 echo "...done."
