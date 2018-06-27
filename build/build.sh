@@ -22,6 +22,7 @@ countdown.sh 10
 build-platform.sh $PLATFORM_LOCATION
 
 ### Build Frontend ###
+deploy-genfiles.sh $PLATFORM_LOCATION/platform-models/de.hs_coburg.mgse.platform.sandbox/src-gen/ $RESTAPI_LOCATION/src/main/java/de/hs_coburg/mgse/persistence/creators
 build-frontend.sh $FRONTEND_LOCATION
 
 ### Build Restapi ###
