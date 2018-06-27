@@ -6,7 +6,8 @@ BASEDIR=$(realpath "$BASEDIR")
 . $BASEDIR/env.sh
 
 ### Clean build ###
-sh $BASEDIR/clean-build.sh
+sh $BASEDIR/build.sh
 
 ### Deploy all ###
 sh $BASEDIR/deploy.sh
+
