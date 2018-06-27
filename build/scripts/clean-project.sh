@@ -1,4 +1,4 @@
 #!/bin/sh
 
-git clean -xfd
-git submodule foreach --recursive git clean -xfd
+sudo git clean -xfd
+sudo git submodule foreach --recursive git clean -xfd

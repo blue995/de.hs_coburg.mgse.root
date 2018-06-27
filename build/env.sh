@@ -1,0 +1,15 @@
+#!/bin/sh
+
+BASEDIR=$(dirname "$0")
+BASEDIR=$(realpath "$BASEDIR")
+export PATH=$PATH:$BASEDIR/scripts
+
+export SERVER=apache-tomcat-8.0.52
+
+export TOMCAT_LOCATION="$BASEDIR/../application/servers/$SERVER"
+export RESTAPI_LOCATION="$BASEDIR/../application/restapi"
+export FRONTEND_LOCATION="$BASEDIR/../application/frontend"
+export PLATFORM_LOCATION="$BASEDIR/../platform"
+
+export RESTAPI_ARTIFACT="rest-api.war"
+export RESTAPI_ARTIFACT_LOCATION="target"
