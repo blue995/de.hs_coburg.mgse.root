@@ -11,5 +11,6 @@ clean-project.sh
 ### Update project ###
 update-project.sh
 
-### Build project ###
-sh $BASEDIR/build.sh
+### Build DSL ###
+build-platform.sh $PLATFORM_LOCATION
+
