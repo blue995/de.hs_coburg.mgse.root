@@ -12,5 +12,5 @@ clean-project.sh
 update-project.sh
 
 ### Build DSL ###
-build-platform.sh $PLATFORM_LOCATION
+build-platform.sh $PLATFORM_LOCATION $PLATFORM_GEN_LOCATION
 
