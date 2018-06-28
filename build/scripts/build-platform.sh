@@ -1,6 +1,13 @@
 #!/bin/sh
 
 PLATFORM_DIR=$(realpath "$1")
+
+if [ ! -d "$2" ]; then
+	echo "Folder '$2' does not exist."
+	echo "Creating directory structure."
+	mkdir -p "$2"
+fi
+
 PLATFORM_GEN_DIR=$(realpath "$2")
 
 # Change working directory
