@@ -2,4 +2,4 @@
 
 sudo git clean -xfd
 sudo git submodule foreach --recursive git clean -xfd
-sudo git submodule foreach --recursive git checkout .
+git submodule foreach --recursive git checkout .
