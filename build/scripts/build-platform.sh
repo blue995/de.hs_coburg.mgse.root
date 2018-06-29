@@ -16,7 +16,7 @@ echo "Changing working directory to '$PLATFORM_DIR'"
 cd "$PLATFORM_DIR"
 
 # Build with gradle
-gradle clean
+#gradle clean
 gradle build
 gradle buildStandalone
 
