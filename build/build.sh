@@ -9,13 +9,13 @@ BASEDIR=$(realpath "$BASEDIR")
 setup-database.sh $BASEDIR/setup.sql
 
 echo
-echo "ATTENTION"
+echo "⚠️  ATTENTION ⚠️\n================"
 echo "Sit down, relax and drink a ☕ ... The next steps might take a while!"
-echo "Step 1: Build platform DSLs"
-echo "Step 2: Build frontend"
-echo "Step 3: Build restapi"
+echo "Step 1: 🛠️  Build platform DSLs"
+echo "Step 2: 🛠️  Build frontend"
+echo "Step 3: 🛠  Build restapi"
 echo
-echo "Countdown:"
+echo "⏲️  Countdown:"
 countdown.sh 10
 
 ### Build DSL ###
