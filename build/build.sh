@@ -10,7 +10,7 @@ setup-database.sh $BASEDIR/setup.sql
 
 echo
 echo "ATTENTION"
-echo "Sit down, relax and drink a cup of coffee... The next steps might take a while!"
+echo "Sit down, relax and drink a ☕ ... The next steps might take a while!"
 echo "Step 1: Build platform DSLs"
 echo "Step 2: Build frontend"
 echo "Step 3: Build restapi"
