@@ -4,7 +4,7 @@ echo "Follow these steps:"
 echo
 echo "============================="
 echo "1) Execute in terminal:"
-echo "sh clean-build-deploy.sh"
+echo "sh init-clean-build.sh"
 read -p "Press enter to continue"
 echo
 
